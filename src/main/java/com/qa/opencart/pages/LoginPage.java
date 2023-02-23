@@ -10,7 +10,7 @@ import com.qa.opencart.Utils.TimeUtil;
 public class LoginPage {
 	private WebDriver driver;
 	private ElementUtil eleUtil;
-	private int i=5;
+	private int i=6;
 
 	// 1. Create Locators for the particular page:
 
