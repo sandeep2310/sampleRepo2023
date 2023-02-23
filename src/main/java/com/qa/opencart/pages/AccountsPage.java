@@ -20,6 +20,7 @@ public class AccountsPage {
 	private By searchIcon = By.cssSelector("div#search button");
 	private By logoutLnk = By.linkText("Logout");
 	private By accSecheaders = By.cssSelector("div#content h2");
+	private int s = 1;
 	
 	//Constructor
 	public AccountsPage(WebDriver driver) {
