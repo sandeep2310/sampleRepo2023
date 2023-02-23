@@ -8,49 +8,14 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">OpenCart Regression Suite</th></tr>
-<tr><td><a href="#t0">Login page Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">22,269</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">Account page Test</a></td><td class="num">7</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">26,288</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">10</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">48,557</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,625</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">OpenCart Regression Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login page Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m0">loginTest</a></td><td rowspan="1">1674803087299</td><td rowspan="1">13821</td></tr><tr><th colspan="4">Login page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m1">forgotPasswordLinkExists</a></td><td rowspan="1">1674803085991</td><td rowspan="1">1249</td></tr><tr class="passedeven"><td><a href="#m2">loginPageTitleTest</a></td><td rowspan="1">1674803087280</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m3">loginPageURLTest</a></td><td rowspan="1">1674803087255</td><td rowspan="1">23</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">Account page Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.opencart.tests.AccountsPageTest</td><td><a href="#m4">logoutExistTest</a></td><td rowspan="1">1674803108458</td><td rowspan="1">10514</td></tr><tr><th colspan="4">Account page Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="7">com.qa.opencart.tests.AccountsPageTest</td><td><a href="#m5">accPageHeadersTest</a></td><td rowspan="1">1674803108219</td><td rowspan="1">200</td></tr><tr class="passedeven"><td><a href="#m6">accPageTitleTest</a></td><td rowspan="1">1674803108422</td><td rowspan="1">18</td></tr><tr class="passedeven"><td><a href="#m7">accPageURLTest</a></td><td rowspan="1">1674803108442</td><td rowspan="1">14</td></tr><tr class="passedeven"><td><a href="#m8">productSearchTest</a></td><td rowspan="3">1674803118988</td><td rowspan="3">3308</td></tr><tr class="passedeven"><td><a href="#m9">productSearchTest</a></td></tr><tr class="passedeven"><td><a href="#m10">productSearchTest</a></td></tr><tr class="passedeven"><td><a href="#m11">searchExistTest</a></td><td rowspan="1">1674803127955</td><td rowspan="1">36</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.qa.opencart.tests.LoginPageTest</td><td><a href="#m0">forgotPasswordLinkExists</a></td><td rowspan="1">1677133520187</td><td rowspan="1">1255</td></tr><tr class="passedeven"><td><a href="#m1">loginPageTitleTest</a></td><td rowspan="1">1677133521466</td><td rowspan="1">15</td></tr><tr class="passedeven"><td><a href="#m2">loginPageURLTest</a></td><td rowspan="1">1677133521445</td><td rowspan="1">20</td></tr><tr class="passedeven"><td><a href="#m3">loginTest</a></td><td rowspan="1">1677133521482</td><td rowspan="1">2793</td></tr></tbody>
 </table>
-<h2>Login page Test</h2><h3 id="m0">com.qa.opencart.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Logout11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:5794}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5794/devtool..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c18d4ac33b7acbce24e2d1811ea4bdbd
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.opencart.Utils.ElementUtil.waitForElementVisible(ElementUtil.java:323)
-	at com.qa.opencart.pages.AccountsPage.isLogoutExist(AccountsPage.java:45)
-	at com.qa.opencart.tests.LoginPageTest.loginTest(LoginPageTest.java:34)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.qa.opencart.tests.LoginPageTest#forgotPasswordLinkExists</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.qa.opencart.tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">com.qa.opencart.tests.LoginPageTest#loginPageURLTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Account page Test</h2><h3 id="m4">com.qa.opencart.tests.AccountsPageTest#logoutExistTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.linkText: Logout11 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.6.0&apos;, revision: &apos;79f1c02ae20&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;16.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.120, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:5816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:5816/devtool..., se:cdpVersion: 109.0.5414.120, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 5d34c9810832b81b75249bc1b5c0f2cc
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at com.qa.opencart.Utils.ElementUtil.waitForElementVisible(ElementUtil.java:323)
-	at com.qa.opencart.pages.AccountsPage.isLogoutExist(AccountsPage.java:45)
-	at com.qa.opencart.tests.AccountsPageTest.logoutExistTest(AccountsPageTest.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.qa.opencart.tests.AccountsPageTest#accPageHeadersTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m6">com.qa.opencart.tests.AccountsPageTest#accPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m7">com.qa.opencart.tests.AccountsPageTest#accPageURLTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m8">com.qa.opencart.tests.AccountsPageTest#productSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Macbook</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m9">com.qa.opencart.tests.AccountsPageTest#productSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>iMac</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m10">com.qa.opencart.tests.AccountsPageTest#productSearchTest</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Samsung</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m11">com.qa.opencart.tests.AccountsPageTest#searchExistTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.qa.opencart.tests.LoginPageTest#forgotPasswordLinkExists</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.opencart.tests.LoginPageTest#loginPageTitleTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.opencart.tests.LoginPageTest#loginPageURLTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.opencart.tests.LoginPageTest#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
